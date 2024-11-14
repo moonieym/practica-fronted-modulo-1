@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi practica de html semantico</title>
+</head>
+<body>
+    <!-- Header es la seccion superior de la pagina y generalmente incluye informacion introductoria, como el titulo y el menu de navegacion -->
+    <header>
+    <h1>Bienvenidos a mi sitio web</h1>
+    <!-- Menu de navegacion -->
+     <nav>
+        <ul>
+            <li><a href="#Sobre-mi">Sobre mi</a></li>
+            <li><a href="#Intereses">Intereses</a></li>
+            <li><a href="#Enlaces">Enlaces</a></li>
+        </ul> 
+     </nav>
+ </header>
+
+ <!-- main es la seccion principal que contiene el contenido central de la pagina.
+  se recomienda usar main solo una vez en cada pagina para indicar la parte mas importante del documento-->
+    <main>
+        <section id="Sobre-mi">
+            <h2>Sobre mi</h2>
+             <p>Me llamo Monserrat y estoy aprendiendo desarrollo web y etiquetas semanticas de html.</p>
+        </section>
+        <section id="intereses">
+             <h2>Intereses</h2>
+             <ul>
+                <li>Escuchar musica</li>
+                <li>Leer</li>
+                <li>Bailar</li>
+                <li>Ver series y peliculas</li>
+             </ul>
+            
+             <!-- figure agrupa cpntenido visual como imagenes, y es comun utilizarla en conjunto con la etiqueta figcaption, que roporciona un titulo o descripcion para el contenido visual-->
+             <figure>
+             <img src="./bts.jpg" alt="Mi grupo favorito" width="300px" title="BTS">
+             <figcaption>Imagen representativa de mis intereses. BTS es uno de mis grupos favoritos.</figcaption>
+             </figure>
+         </section>
+         <section id="enlaces">
+            <h2>Enlaces</h2>
+            <p>Visita estos sitios para conocerlos.</p>
+            <ul>
+             <!-- a es una etiqueta de enlaces que generalmente viene acompañada del atributo href donde agregamos la direccion a la cual queremos redireccionar, otro atributo comunmente utilizado es el de targer que da un control de donde se abre el enlace -->
+             <li>
+                <a href="https://es.wikipedia.org/wiki/BTS" target="_blank">Wikipedia</a>
+             </li>
+             <li>
+                <a href="https://www.youtube.com/@BTS" target="_blank">Youtube</a>
+             </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Monserrat. Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
+    

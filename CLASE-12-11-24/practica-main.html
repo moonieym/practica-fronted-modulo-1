@@ -18,12 +18,36 @@
         <h1>Mi blog personal</h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</li>
-                <li><a href="#">Sobre mi</li>
-                <li><a href="#">Articulos</li>
-                <li><a href="#contacto">Contacto</li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre mi</a></li>
+                <li><a href="#">Articulos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>    
     </header>
+    <main>
+        <section id="contacto">
+            <h2>Formulario de contacto</h2>
+            <p>Rellena el formulario para enviarme tus comentarios o preguntas.</p>
+            <!-- Formulario de contacto -->
+             <form>
+                <!-- label es una etiqueta que nos sirve para asociar un texto descrptivo a un elemento de entrada.
+                 El atributo for en label ayuda a vincularlo con eun elemento de formulario especifico ya que el atributo for contiene el id del campo de entrada con el cual se asocia -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="email">Coreo electronico:</label>
+                <input type="email" id="email" placeholder="Ejemplo@correo.com" required>
+
+                <label for="asunto">Asunto:</label>
+                <select id="asunto">
+                    <option>Consulta</option>
+                    <option>Sugerencia</option>
+                    <option>Queja</option>
+                    <option>Otro</option>
+                </select>
+             </form>
+        </section>     
+    </main>
 </body>
 </html>

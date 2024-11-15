@@ -29,7 +29,7 @@
         <section id="contacto">
             <h2>Formulario de contacto</h2>
             <p>Rellena el formulario para enviarme tus comentarios o preguntas.</p>
-            <!-- Formulario de contacto -->
+             <!-- Formulario de contacto -->
              <form>
                 <!-- label es una etiqueta que nos sirve para asociar un texto descrptivo a un elemento de entrada.
                  El atributo for en label ayuda a vincularlo con eun elemento de formulario especifico ya que el atributo for contiene el id del campo de entrada con el cual se asocia -->
@@ -46,6 +46,39 @@
                     <option>Queja</option>
                     <option>Otro</option>
                 </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje aqui..." required></textarea>
+
+                <!-- fieldset nos sirve para agrupar elementos de un formulario relacionado. Facilita la compresion navegacion en el formulario, especialmnete para los usuarios de lectores de pantalla -->
+                <fieldset>
+                    <!-- legend nos ayuda a proporcionar un titulo a mi grupo de informacion almacenado el fieldset -->
+                    <legend>Genero</legend>
+                    <!-- Cada boton de radio tiene el mismo 'name' para permitir seleccionar solo una opcion en este grupo -->
+                    <label for="genero-masculino">Masculino</label>
+                    <input type="radio" name="Genero" id="genero-masculino">
+
+                    <label for="genero-femenino">Femenino</label>
+                    <input type="radio" name="Genero" id="genero-femenino">
+
+                    <label for="genero-otro">Otro</label>
+                    <input type="radio" name="Genero" id="genero-otro">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Intereses</legend>
+                    <label for="Intereses">Musica</label>
+                    <input type="checkbox" name="Musica" id="Intereses-Musica">
+                    <label for="Intereses">Leer</label>
+                    <input type="checkbox" name="Leer" id="Intereses-Leer">
+                    <label for="Intereses">Bailar</label>
+                    <input type="checkbox" name="Bailar" id="Intereses-Bailar">
+                    <label for="Intereses">Ver series y peliculas</label>
+                    <input type="checkbox" name="Ver series y peliculas" id="Intereses-Ver series y peliculas">
+                    <label for="Intereses">Escribir</label>
+                    <input type="checkbox" name="Escribir" id="Intereses-Escribir">
+                </fieldset>
+
              </form>
         </section>     
     </main>
